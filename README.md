@@ -19,7 +19,7 @@ This project is a demo of an early childhood education drawing AI Assistant Agen
 3. When importing the full amount of student data, first clear the corresponding directory under `vector_store`.
 
 
-# 3. AI Assistant Demonstration Interface
+# 4. AI Assistant Demonstration Interface
 1. Demonstration of the "Painting Evaluation, Picture Story, and Potential Report Design" task.
 ![示例图片](assets/temp/result_1.png)
 ![示例图片](assets/temp/result_2.png)
