@@ -185,11 +185,6 @@ tools = [
         func=Tool_Functions.create_Potential_Analysis,
         description="当需要生成潜能分析报告时，可以使用这个工具返回潜能分析报告，输入是用户输入的图片地址",
     ),
-    # Tool(
-    #     name="清除记忆",
-    #     func=Tool_Functions.clear_memory,
-    #     description="清除所有保存的对话记录和对话记忆",
-    # ),
 ]
 agent_prompt = CustomPromptTemplate(
     template=AGENT_TMPL,
