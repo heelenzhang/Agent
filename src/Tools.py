@@ -122,7 +122,7 @@ class ToolFunctions:
         client = OpenAI()
         response = client.images.generate(
             model="dall-e-3",
-            prompt=CONTEXT_SampleImage_TMPL,  # 生成一张面向5岁儿童，关于‘动物园大冒险’主题相关的参考样图
+            prompt=CONTEXT_SampleImage_TMPL,
             size="1024x1024",
             quality="standard",
             n=1,
@@ -156,7 +156,6 @@ class ToolFunctions:
                         {
                             "type": "image_url",
                             "image_url": {
-                                # https://img0.baidu.com/it/u=3884267628,361892966&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=348 image_url
                                 "url": image_url,
                             },
                         },

@@ -2,33 +2,19 @@ import re
 from typing import List, Union
 import textwrap
 import time
+from langchain.prompts import StringPromptTemplate
+from langchain.schema import AgentAction, AgentFinish
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import LLMChain
+from src.Tools import ToolFunctions
+import configs.api_key
 from openai import OpenAI
-import langchain
-
-langchain.debug = False # True
-
 from langchain.agents import (
     Tool,
     AgentExecutor,
     LLMSingleActionAgent,
     AgentOutputParser,
 )
-
-from langchain.prompts import StringPromptTemplate
-from langchain.schema import AgentAction, AgentFinish
-from langchain.prompts import PromptTemplate
-from langchain.chat_models import ChatOpenAI
-from langchain.chains import LLMChain
-from langchain.llms.base import BaseLLM
-import configs.api_key
-from langchain.vectorstores import Chroma
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.chains.retrieval_qa.base import RetrievalQA
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain
-from langchain.prompts import ChatPromptTemplate
-
-from codes.Tools import ToolFunctions
 
 def output_response(response: str) -> None:
     if not response:
