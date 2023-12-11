@@ -1,6 +1,6 @@
 # 1. Project Introduction
 
-This project is a demo of an early childhood education drawing AI Assistant Agent based on langchain + chatgpt.
+This project is a demo of an early childhood education drawing AI Assistant Agent based on LangChain + ChatGPT.
 
 # 2. Directory Structure
 
